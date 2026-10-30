@@ -5,9 +5,9 @@
 SMC is a Java application that translates a state transition table into a program that implements the described state machine.  Output languages include Java, Go, Dart, C, and C++.  Adding other languages is trivial.
 
 ### Command Line
-`ant compile && ant jar`
+`./gradlew jar` (builds `build/jar/smc.jar`; `./gradlew build` also runs the tests)
 
-`java -jar smc.jar -l <language> -o <directory> -f <flags>`
+`java -jar build/jar/smc.jar -l <language> -o <directory> -f <flags>`
 
  * `<language>` is one of: `C`, `Cpp`, `Dart`, `Go`, or `Java`.
  * `<directory>` is the output directory.  Your new state machine will be written there.

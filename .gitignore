@@ -8,3 +8,4 @@ test_cases/java_turnstile/.idea
 *.lock
 out
 
+.gradle
